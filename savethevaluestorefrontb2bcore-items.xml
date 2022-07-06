@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserveds. -->
+<!--suppress ConflictingAttributes -->
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="items.xsd">
+	
+	<!--   whatever the Out of the box code is there   -->
+	
+	<itemtypes>
+		<itemtype code="Savethevalue" generate="true" autocreate="true">
+			<deployment table="registertable" typecode="10127"/>
+			<attributes>
+				<attribute qualifier="name" type="java.lang.String">
+						<modifiers optional="false" unique= "true"/>
+						<persistence type="property" />
+					</attribute>				
+					<attribute qualifier="emailid" type="java.lang.String">
+						<modifiers optional="false" unique= "true"/>
+						<persistence type="property" />
+					</attribute>				
+			</attributes>			
+		</itemtype>
+	
+	
+	</itemtypes>
+</items>
